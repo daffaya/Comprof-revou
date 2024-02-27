@@ -19,7 +19,8 @@ header.navbar-container {
   margin-inline: auto;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-inline: 3rem;
   align-items: center;
 
   z-index: 9999;
@@ -48,12 +49,149 @@ header.navbar-container .nav-list li a {
   text-decoration: none;
   font-size: 1.05rem;
   font-weight: 500;
-  color: #212121;
+  color: #333333;
 
   transition: all 0.2s ease-in-out;
 }
 
 header.navbar-container .nav-list li:hover a {
-  background-color: #212121;
+  background-color: #ffde3d;
+  font-weight: 550;
+  color: #333333;
+}
+
+.banner-section {
+  background-color: #ffde3d;
+  background-image: url("../img/banner.png");
+  background-size: cover;
+  background-position: center;
+  color: black;
+  text-align: center;
+  padding: 100px 0;
+
+  border-bottom: 1px solid #333333;
+}
+
+.banner-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.banner-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.banner-section .btn {
+  display: inline-block;
+  background-color: #de3078;
   color: white;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: background-color 0.3s ease;
+}
+
+.banner-section .btn:hover {
+  background-color: #c4105b;
+  font-weight: bold;
+}
+
+.headquarter-section {
+  margin-inline: 4rem;
+  padding-block: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.hq-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hq-item h3 {
+  text-align: center;
+}
+.hq-image img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.message-section {
+  margin-inline: 4rem;
+  padding-block: 2rem;
+}
+
+.message-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.form-container {
+  flex: 0 0 45%;
+}
+
+#data-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#data-form label,
+#data-form input,
+#data-form textarea {
+  flex: 0 0 50%;
+  margin-bottom: 10px;
+  box-sizing: bor;
+}
+
+.data-form-receiver {
+  flex: 0 0 40%;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.gender {
+  margin-block: 1rem;
+}
+
+.gender-input input {
+  margin-block: 0.8rem;
+}
+
+.gender-input label {
+  margin-right: 1rem;
+}
+
+#data-form input[type="text"],
+#data-form input[type="date"],
+#data-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#data-form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+aside {
+  align-self: baseline;
+  height: 350px;
+}
+
+.data-form-receiver {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 4px;
 }

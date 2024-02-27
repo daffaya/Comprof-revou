@@ -25,12 +25,111 @@
             <a href="#">Portfolio</a>
           </li>
           <li>
-            <a href="#">Message Us</a>
+            <a href="#message-us">Message Us</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <div class="content">
+        <div class="banner-section" id="banner-section">
+          <h1>Kickstart Your Career in Tech</h1>
+          <p>Explore the best deals and products</p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="headquarter-section">
+          <h1>Our Headquarter</h1>
+
+          <div class="hq-container">
+            <div class="hq-item">
+              <div class="hq-image">
+                <img
+                  src="https://storage.googleapis.com/flip-prod-mktg-strapi/media-library/Jakarta_Neighborhoods_911480ed0f/Jakarta_Neighborhoods_911480ed0f.jpg"
+                  alt="Jakarta"
+                />
+              </div>
+              <h3>Jakarta</h3>
+            </div>
+            <div class="hq-item">
+              <div class="hq-image">
+                <img
+                  src="https://asset.kompas.com/crops/_QBFvchNV7JtOIaVkEg0JFZfLJU=/0x0:1000x667/750x500/data/photo/2022/07/25/62dec6809a479.jpg"
+                  alt="Bandung"
+                />
+              </div>
+              <h3>Bandung</h3>
+            </div>
+            <div class="hq-item">
+              <div class="hq-image">
+                <img
+                  src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/destinations/revision-2019/all-revision-destination/surabayathumb.jpg"
+                  alt="Surabaya"
+                />
+              </div>
+              <h3>Surabaya</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="message-section" id="message-us">
+          <h1>Message Us</h1>
+          <div class="message-container">
+            <div class="form-container">
+              <form id="data-form">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nama"
+                  required
+                />
+
+                <label for="birthday">Tanggal Lahir:</label>
+                <input type="date" id="birthday" name="birthday" required />
+
+                <div class="gender">
+                  <legend>Jenis Kelamin:</legend>
+                  <div class="gender-input">
+                    <input
+                      type="radio"
+                      id="male"
+                      name="gender"
+                      value="Laki-laki"
+                      required
+                    />
+                    <label for="male">Laki-laki</label>
+                    <input
+                      type="radio"
+                      id="female"
+                      name="gender"
+                      value="Perempuan"
+                      required
+                    />
+                    <label for="female">Perempuan</label>
+                  </div>
+                </div>
+
+                <label for="message">Pesan:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Pesan"
+                  required
+                ></textarea>
+
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+
+            <aside class="data-form-receiver" id="data-form-receiver"></aside>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>
