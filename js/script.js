@@ -1,3 +1,11 @@
+fetch("navbar.html")
+  .then((response) => response.text())
+  .then((html) => {
+    // Inject navbar content into the DOM
+    document.getElementById("navbar-container").innerHTML = html;
+  })
+  .catch((error) => console.error("Error fetching navbar:", error));
+
 document
   .getElementById("data-form")
   .addEventListener("submit", function (event) {
