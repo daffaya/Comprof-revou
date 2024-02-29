@@ -198,6 +198,7 @@ aside {
 
 .data-form-receiver {
   display: flex;
+  justify-content: center;
   align-items: center;
   border: 1px solid black;
   padding: 10px;
@@ -235,6 +236,46 @@ aside #placeholder {
 
 .paragraph-wrapper ul {
   padding-left: 20px;
+}
+
+.kindness-section {
+  margin-block: 4rem;
+}
+
+.circled-number {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 10px;
+  padding: 2px;
+}
+
+.tabs-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.square-icon {
+  display: flex;
+  width: 128px;
+  height: 108px;
+  background-color: #f1f1f1;
+  margin: 0 36px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 6px rgba(18, 25, 38, 0.2),
+    1px 1px 4px rgba(18, 25, 38, 0.1);
+}
+
+.paragraph-menu {
+  margin-top: 4rem;
+  padding-inline: 20rem;
+  color: #4d4d4d;
+  line-height: 1.5625;
 }
 
 @media screen and (max-width: 768px) {

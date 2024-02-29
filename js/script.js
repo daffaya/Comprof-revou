@@ -39,3 +39,26 @@ document
       placeholder.remove();
     }
   });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all square-icon elements
+  var squareIcons = document.querySelectorAll(".square-icon");
+  // Get all paragraph-menu elements
+  var paragraphMenus = document.querySelectorAll(".paragraph-menu");
+
+  // Loop through each square-icon and add click event listener
+  squareIcons.forEach(function (squareIcon) {
+    squareIcon.addEventListener("click", function () {
+      // Hide all paragraph-menus
+      paragraphMenus.forEach(function (menu) {
+        menu.style.display = "none";
+      });
+
+      // Get the index of the clicked square-icon
+      var index = squareIcon.dataset.index;
+      // Show the paragraph-menu corresponding to the clicked icon
+      document.getElementById("paragraph-menu-" + index).style.display =
+        "block";
+    });
+  });
+});
