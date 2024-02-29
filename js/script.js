@@ -19,11 +19,15 @@ document
     receiver.innerHTML = "";
     receiver.appendChild(receivedData);
 
-    const sayHello = document.getElementById("banner-section");
-    sayHello.innerHTML = `
-    <h1>Hi ${formData.get("name")}
-    <h1>Kickstart Your Career in Tech</h1>
-    <p>Explore the best deals and products</p>
-    <a href="https://revou.co/" target="_blank" class="btn">Learn More</a>
+    const bannerSection = document.getElementById("banner-section");
+    const bannerContent = bannerSection.innerHTML;
+    bannerSection.innerHTML = `
+    <h1>Hi ${formData.get("name")}</h1>
+    ${bannerContent}
     `;
+
+    const placeholder = document.getElementById("placeholder");
+    if (placeholder) {
+      placeholder.remove();
+    }
   });
