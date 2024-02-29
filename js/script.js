@@ -39,3 +39,28 @@ document
       placeholder.remove();
     }
   });
+const slider = document.querySelector(".banner-slider");
+const slides = document.querySelectorAll(".slide");
+
+let currentIndex = 0;
+const totalSlides = slides.length;
+
+const setInitialSlidePositions = () => {
+  slides.forEach((slide, index) => {
+    slide.style.left = `${index * 100}%`;
+  });
+};
+
+// Function to move the slider
+const moveSlider = () => {
+  currentIndex++;
+  if (currentIndex >= totalSlides) {
+    currentIndex = 0;
+  }
+
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+};
+
+setInitialSlidePositions();
+
+setInterval(moveSlider, 3000);
